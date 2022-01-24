@@ -111,7 +111,7 @@ class Cloud {
       RichPoint point(pcl_point.x, pcl_point.y, pcl_point.z);
       cloud.push_back(point);
     }
-    return make_shared<Cloud>(cloud);
+    return boost::make_shared<Cloud>(cloud);
   }
 #endif  // PCL_FOUND
 

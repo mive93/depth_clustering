@@ -88,7 +88,7 @@ Cloud::Ptr CreateWallLikeCloudLabeled(double max_val, double step,
       cloud.push_back(point);
     }
   }
-  return make_shared<Cloud>(cloud);
+  return boost::make_shared<Cloud>(cloud);
 }
 
 Cloud::Ptr CreateCyllinderCloud(float radius, int num_beams_h, int num_beams_v,

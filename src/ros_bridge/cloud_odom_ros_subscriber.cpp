@@ -157,7 +157,7 @@ Cloud::Ptr CloudOdomRosSubscriber::RosCloudToCloud(
     cloud.push_back(point);
   }
 
-  return make_shared<Cloud>(cloud);
+  return boost::make_shared<Cloud>(cloud);
 }
 
 }  // namespace depth_clustering
